@@ -1,0 +1,30 @@
+<ion-view view-title="详情">
+  <ion-content class="padding">
+    <div class="list card">
+	  <div class="item item-avatar">
+	  	<img src="{{chat.picUrl}}">
+	    <h2 class="bookName">{{chat.title}}</h2>
+	    <p class="bookAuthor">{{chat.author}}</p>
+	    <p class="bookAuthor">{{chat.press}}</p>
+	  </div>
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-thumbsup"></i>
+	      Like
+	    </a>
+	    <a class="tab-item" href="#">
+	      <i class="icon ion-chatbox-working"></i>
+	      Comment
+	    </a>
+	    <a class="tab-item" href="#/read">
+	      <i class="icon ion-map"></i>
+	      Navigate
+	    </a>
+	  </div>
+	  <div class="item item-body">
+	    <img class="full-image" src="{{chat.picUrlB}}">
+	    <p class="detailText">{{chat.intro}}</p>
+	  </div>
+	</div>
+  </ion-content>
+</ion-view>

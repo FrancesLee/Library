@@ -1,0 +1,24 @@
+ [
+ {
+    "id": 0,
+    "title": "自习模式",
+    "feature": "安静指数",
+    "picUrl": "http://img.zcool.cn/community/033a537554c786100000158fc21570c.jpg",
+    "picUrlB": "https://d13yacurqjgara.cloudfront.net/users/526/screenshots/995706/office-stuff-cm.jpg",
+    "intro": "自习"
+  }, {
+    "id": 1,
+    "title": "靠窗模式",
+    "feature": "明亮指数",
+    "picUrl": "http://cdn-img.easyicon.net/png/11839/1183976.gif",
+    "picUrlB": "https://d13yacurqjgara.cloudfront.net/users/280243/screenshots/2135167/caribbean_guitar_1x.png",
+    "intro": "靠窗"
+  },{
+    "id": 2,
+    "title": "便捷模式",
+    "feature": "生活指数",
+    "picUrl": "https://d13yacurqjgara.cloudfront.net/users/65090/screenshots/1169892/toilet_icons_1x.png",
+    "picUrlB": "https://d13yacurqjgara.cloudfront.net/users/24660/screenshots/557148/window.png",
+    "intro": "便捷"
+}
+]

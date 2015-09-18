@@ -1,0 +1,54 @@
+<ion-view view-title="推荐">
+  <ion-content>
+    <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" slide-interval="2500" does-continue="true">
+      <ion-slide ng-repeat="seat in seats">
+        <div class="box">
+          
+          <a href="#/tab/chats/{{seat.id}}">
+            <img src="{{seat.picUrl}}">
+          </a>
+          <div class="act">
+            <p>{{seat.title}}</p>
+          </div>
+          
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+    <div class="padding">
+      <p>位置推荐</p>
+      <!-- study -->
+      <div class="list card moveUp" >
+        <div class="item item-image size">
+          <a href="#/study"><img src="./img/email-illustration_1x.png"></a>
+        </div>
+        <div class="item item-avatar">
+          <img src="./img/Prohibition_icons-01-128.png">
+          <h2>学习模式&nbsp;&nbsp;</h2>
+          <p>安静指数&nbsp;&nbsp;<i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i></p>
+        </div>
+      </div>
+      <!-- study -->
+      <div class="list card moveUp" >
+        <div class="item item-image size">
+          <a href="#/searchdetail"><img src="./img/reading_1x.jpg"></a>
+        </div>
+        <div class="item item-avatar">
+          <img src="./img/sun-128.png">
+          <h2>阅读模式&nbsp;&nbsp;</h2>
+          <p>阳光指数&nbsp;&nbsp;<i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i></p>
+        </div>
+      </div>
+      <!-- study -->
+      <div class="list card moveUp" >
+        <div class="item item-image size">
+          <a href="#/life"><img src="./img/drib192_1x.jpg"></a>
+        </div>
+        <div class="item item-avatar">
+          <img src="./img/beautix_toilet-128.png">
+          <h2>便捷模式&nbsp;&nbsp;</h2>
+          <p>生活指数&nbsp;&nbsp;<i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i><i class="icon ion-ios-star"></i></p>
+        </div>
+      </div>
+    </div>
+  </ion-content>  
+</ion-view>

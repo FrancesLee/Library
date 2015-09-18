@@ -1,0 +1,26 @@
+<ion-view view-title="图书检索">
+  <ion-content class="padding" >
+    <!-- 搜索 模块-->
+    <div class="list list-inset" id="searchBox"><!-- 搜索框 -->
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="搜索你感兴趣的书籍" ng-model="query">
+      </label>
+      <ul class="list" ng-show="query"><!-- 搜索结果列表 -->
+          <a class="item" href="#/tab/dash/{{chat.id}}" ng-repeat="chat in chats | filter:query">
+            <p><span class="left">《{{chat.title}}》</span><span class="right">{{chat.author}}</span></p>
+          </a>
+      </ul>
+    </div>
+    <!-- 热门书籍推荐 模块-->
+    <p>热门书籍推荐</p>
+    <div class="list">
+        <a class="item item-thumbnail-left" href="#/tab/dash/{{phone.id}}" ng-repeat="phone in phones">
+          <img ng-src="{{phone.picUrl}}" class="book">
+          <h3 class="title" id="gold">{{phone.title}}</h3>
+          <h4 class="author">{{phone.author}}</h4>
+          <h4 class="press">{{phone.press}}</h4>
+        </a>
+    </div>
+  </ion-content>
+</ion-view>

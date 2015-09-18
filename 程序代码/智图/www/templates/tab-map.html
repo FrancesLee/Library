@@ -1,0 +1,20 @@
+<ion-view view-title="关于">
+  <ion-content class="padding">
+    <!-- <map id="map" on-create="mapCreated(map)" dojotype="dijit.layout.ContentPane" region="center"></map> -->
+    <div class="list card ">
+	  	<a href="#/tab/map/{{about.id}}" class="item item-icon-left positive" ng-repeat="about in abouts">
+	    	<i class="icon {{about.icon}} positive"></i>
+	    	{{about.title}}
+	    </a>
+	</div>
+	<div class="list list-inset">
+	  <label class="item item-input">
+	    <textarea placeholder="请写下您的宝贵意见" class="size" id="advice"></textarea>
+	  </label>
+	  <button class="button button-full button-positive">
+	     提交
+	  </button>
+	</div>
+
+  </ion-content>
+</ion-view>
